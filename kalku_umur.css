@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("/assets/fonts/Poppins-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body {
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+}
+
+main {
+    width: 345px;
+    height: 480px;
+    background: #FFFFFF;
+    border-radius: 25px 25px 100px 25px;
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 295px;
+    height: 390px;
+}
+
+form {
+    width: 295px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthdate-panel {
+    display: flex;
+    flex-direction: column;
+    color: #716F6F;
+}
+
+.birthdate-panel label {
+    width: 40px;
+    height: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.birthdate-panel input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    width: 85.65px;
+    height: 55px;
+    border: 1px solid #DCDCDC;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin-top: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    color: #151515;
+    outline: none;
+}
+
+.birthdate-panel input:focus {
+    border: 1px solid #854DFF;
+    caret-color: #854DFF;
+}
+
+.birthdate-panel input:hover {
+    cursor: pointer;
+}
+
+.date-container {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 295px;
+    height: 185px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.date-panel {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #151515;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.date-panel span {
+    margin-right: 10px;
+    max-width: 80px;
+    height: 62px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #854DFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.mid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.line {
+    width: 295px;
+    height: 1px;
+    background-color: #DCDCDC;
+    top: 80px;
+    position: absolute;
+}
+
+
+.button {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    width: 65px;
+    height: 65px;
+    background: #854DFF;
+    border-radius: 215px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    top: 50px;
+    left: 35%;
+    right: 35%;
+}
+
+.button:hover {
+    background-color: #151515;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 25px;
+    height: 25px;
+}
+
+.error-text {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FF5959;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.input {
+    margin: 0;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 990px) {
+    
+main {
+    width: 840px;
+    height: 650px;
+    border-radius: 25px 25px 200px 25px;
+    margin-top: 110px;
+}
+
+section {
+    width: 725px;
+    height: 540px;
+}
+
+form {
+    margin: 0;
+    width: 545px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.birthdate-panel {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.birthdate-panel label {
+    width: 40px;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.birthdate-panel input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 15px;
+    width: 160px;
+    height: 70px;
+    border-radius: 8px;
+    margin-top: 4px;
+    font-size: 30px;
+    line-height: 50px;
+}
+
+.birthdate-panel input:focus {
+    border: 1px solid #854DFF;
+    caret-color: #854DFF;
+}
+
+.birthdate-panel input:hover {
+    cursor: pointer;
+}
+
+.date-container {
+    margin-top: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 730px;
+    height: 340px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.date-panel {
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 105px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    color: #151515;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0;
+  
+}
+
+.date-panel span {
+    margin-right: 10px;
+    max-width: 150px;
+    height: 115px;
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 105px;
+}
+
+.mid-container {
+    width: 725px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.line {
+    width: 630px;
+    height: 1px;
+    margin: 0;
+    position: static;
+}
+
+.button {
+    padding: 0px;
+    gap: 10px;
+    width: 95px;
+    height: 95px;
+    top: 270px;
+    left: 400px;
+    position: static;
+}
+
+.button:hover {
+    background-color: #151515;
+    cursor: pointer;
+}
+
+.button svg {
+    width: 45px;
+    height: 45px;
+}
+
+}

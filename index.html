@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device --> 
+  <link rel="stylesheet" type="text/css" href="kalku_umur.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main>
+    <section>
+    <header>
+      <form>
+        <div class="birthdate-panel">
+          <label for="hari">DAY</label>
+          <input type="number" autocomplete="no" spellcheck="false" name="hari" class="input hari" placeholder="DD" maxlength="2">
+          <div class="error-text error-hari hidden">This field is required</div>
+        </div>
+        <div class="birthdate-panel">
+          <label for="bulan">MONTH</label>
+          <input type="number" autocomplete="no" spellcheck="false" name="bulan" class="input bulan" placeholder="MM" maxlength="2">
+          <div class="error-text error-bulan hidden">This field is required</div>
+        </div>
+        <div class="birthdate-panel">
+          <label for="tahun">YEAR</label>
+          <input type="number" autocomplete="no" spellcheck="false" name="tahun" class="input tahun" placeholder="YY" maxlength="4">
+          <div class="error-text error-tahun hidden">This field is required</div>
+        </div>
+      </form>
+    </header>
+    <div class="mid-container">
+      <div class="line"></div>
+      <div class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </div>
+      <div class="line2"></div>
+    </div>
+
+    <div class="date-container">
+      <div class="date-panel">
+        <span class="years">--</span>years
+      </div>
+      <div class="date-panel">
+        <span class="months">--</span>months
+      </div>
+      <div class="date-panel">
+        <span class="days">--</span>days
+      </div>
+    </div>
+    </section>
+  </main>
+  <script src="kalku_umur.js"></script>
+</body>
+</html>
